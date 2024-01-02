@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Authorize PDF Signature",
+    "version": "1.0",
+    "description": "Store Your Signature and Apply to PDF",
+    "icons": {
+      "128": "editPdfLogo.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage"
+      ],
+    "action": {
+      "default_popup": "editPdfpopup.html",
+      "default_icon": "editPdfLogo.png"
+    },
+    "host_permissions": ["<all_urls>"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+      }
+}

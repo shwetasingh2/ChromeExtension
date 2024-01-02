@@ -1,0 +1,116 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./pdfImage.jpg') center/cover no-repeat fixed;
+  opacity: 0.3; 
+  z-index: -1; 
+}
+h3 {
+    color: rgb(33, 16, 12);
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  #addSignature {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+    border-radius: 12px;
+  }
+  
+  #addSignature:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  #sighpdf {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ec1313;
+    border-radius: 12px;
+  }
+  
+  #sighpdf:hover {
+    background-color: #ec1313;
+    color: white;
+  }
+
+  #buttonDiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #buttonDiv > button {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .textAreaContainer{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .textAreaField{
+    margin: 10px;
+    text-align: center;
+  }
+
+  #inputDiv{
+    display: flex;
+    justify-content: start;
+  }
+
+  #inputDiv > input{
+    margin: 10px;
+  }
+
+ .textAreaField {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border-bottom: 2px solid red;
+  text-align: left;
+}
+
+.saveButton{
+  background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 12px;
+  }
+  
+.saveButton:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .displaySignature{
+    color: black;
+    font-weight: bold;
+  }
